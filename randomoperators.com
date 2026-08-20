@@ -1,5 +1,15 @@
 import random
 
+a = random.randint(3,90)
+print(a)
+
+name = "rida"
+chr=random.choice(name)
+print(chr)
+
+z = random.random()
+print(z)
+
 while True:
     user_action = input("Enter a choice - (rock, paper, scissors): ")
     possible_actions = ["rock","paper","scissors"]
@@ -26,6 +36,11 @@ while True:
         else:
             print("Rock breaks scissors, you lose.")
     
+    play_again = input("Play again? (yes/no): ")
+
+    if play_again != "yes":
+        print("Thank you for trying out 'Rock, Paper, Scissors'. Hope you enjoyed it!")
+        break
     play_again = input("Play again? (yes/no): ")
 
     if play_again != "yes":
